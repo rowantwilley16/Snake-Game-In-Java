@@ -2,10 +2,10 @@ package snake;
 
 public class Game {
 
-	public static final int DIRECTION_NONE
-		= 0,
-		DIRECTION_RIGHT = 1, DIRECTION_LEFT = -1,
-		DIRECTION_UP = 2, DIRECTION_DOWN = -2;
+	public static final int DIRECTION_NONE = 0,
+	DIRECTION_RIGHT = 1, DIRECTION_LEFT = -1,
+	DIRECTION_UP = 2, DIRECTION_DOWN = -2;
+	
 	private Snake snake;
 	private Board board;
 	private int direction;
