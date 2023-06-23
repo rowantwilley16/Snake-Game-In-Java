@@ -32,7 +32,7 @@ public class Snake {
 		snakePartList.addFirst(head);
 	}
 	
-	public boolean crashCheck(Cell nextCell) {
+	public boolean checkCrash(Cell nextCell) {
 		System.out.println("Going to check for crash"); 
 		
 		for (Cell cell: snakePartList) {
