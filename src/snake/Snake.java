@@ -12,7 +12,7 @@ public class Snake {
 	public Snake(Cell initPos) {
 		head = initPos; 
 		snakePartList.add(head);
-		head.setCellType(CellType.SNAKENODE);
+		head.setCellType(CellType.SNAKE_NODE);
 	}
 	
 	public void grow() {
@@ -28,7 +28,7 @@ public class Snake {
 		tail.setCellType(CellType.EMPTY);
 		
 		head = nextCell; 
-		head.setCellType(CellType.SNAKENODE);
+		head.setCellType(CellType.SNAKE_NODE);
 		snakePartList.addFirst(head);
 	}
 	

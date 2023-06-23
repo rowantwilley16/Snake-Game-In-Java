@@ -6,5 +6,5 @@ public enum CellType {
 
 	EMPTY,
 	FOOD,
-	SNAKENODE;
+	SNAKE_NODE;
 }
