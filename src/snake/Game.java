@@ -49,11 +49,11 @@ public class Game {
 	// and accept user input from the Keyboard.
 	public void update()
 	{
-		System.out.println("Going to update the game");
+		System.out.println("Going to update the game"); //game ticks
+		
 		if (!gameOver) {
 			if (direction != DIRECTION_NONE) {
-				Cell nextCell
-					= getNextCell(snake.getHead());
+				Cell nextCell = getNextCell(snake.getHead());
 
 				if (snake.checkCrash(nextCell)) {
 					setDirection(DIRECTION_NONE);
@@ -61,8 +61,7 @@ public class Game {
 				}
 				else {
 					snake.move(nextCell);
-					if (nextCell.getCellType()
-						== CellType.FOOD) {
+					if (nextCell.getCellType() == CellType.FOOD) {
 						snake.grow();
 						board.generateFood();
 					}
@@ -112,6 +111,7 @@ public class Game {
 
 		// here I have just called the different methods
 		// to show the functionality
+		
 		for (int i = 0; i < 5; i++) {
 			if (i == 2)
 				newGame.board.generateFood();

@@ -37,7 +37,6 @@ public class Board {
             }
         }
         cells[row][column].setCellType(CellType.FOOD);
-        System.out.println("Food is generated at: " + row
-                           + " " + column);
+        System.out.println("Food is generated at: " + row + " " + column);
     }
 }
